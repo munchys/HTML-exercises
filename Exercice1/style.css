@@ -1,0 +1,70 @@
+
+/*
+Ma feuille de style à donf de ouf
+*/
+
+body{
+  background-color: #A3CCFF;
+}
+header{
+  border:1px solid #000;
+}
+header h1{
+  display:inline-block;
+  border:1px solid #000;
+  background-color:green;
+  width:200px;
+  height:100px;
+  vertical-align: middle;
+}
+header nav{
+  display:inline-block;
+  border:1px solid #000;
+  vertical-align: middle;
+  background-color: brown;
+  padding: 0;
+}
+header nav ul{
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li{
+  width: 150px;
+  display: inline-block;
+  margin-bottom: : 2px;
+  background-color: orange;
+}
+header nav ul li a{
+  vertical-align: center;
+  text-align: center;
+  width: inherit;
+  display: inline-block;
+  line-height: 40px;
+  background-color: orange;
+}
+
+button:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+
+/*body section p{
+  display: inline-block;
+  width: 500px;
+
+}
+aside p{
+  display: inline-block;
+  width: 500px;
+}*/
+
+li{
+  color:blue;
+}
+aside{
+  color:green;
+}
+/*li{
+  display:block;
+}*/
