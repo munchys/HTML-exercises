@@ -31,7 +31,7 @@ header h1{
   text-align: center;
   display:inline-block;
   border:1px solid #000;
-  background-image: url('img/logo.jpg');
+  background-image: url('img/mon_logo.jpg');
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
@@ -73,7 +73,7 @@ header nav ul li a{
   text-decoration: none;
   line-height: 40px;
   /*background-color: lightgrey;*/
-  transition: transform 0.5s, background-color 0.5s, border 0.5s, text-decoration 0.5s, color 0.5s;
+  transition: transform 0.5s, background-color 0.5s, border 0.5s, text-decoration 0.5s, color 0.5s, 0.5s ease-in-out;
 }
 
 section{
@@ -138,13 +138,12 @@ button:hover{
  ul li:hover a{
   transform: rotate(45deg);
   text-decoration: underline;
+  color:purple;
   background-color: lightgrey;
   border-left:  1px solid #000;
   border-right: 1px solid #000;
 }
-li{
-  color:blue;
-}
+
 /*a:hover{
     color:lightred;
 
