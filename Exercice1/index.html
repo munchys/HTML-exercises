@@ -1,46 +1,65 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Exercice 1</title>
+  <title>Ma page web</title>
   <meta charset="utf-8">
   <meta name="description" content="ceci est mon super site !!!!!!">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
+  <link href="font.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<div id="global">
+
 
   <!-- Début header -->
   <header>
     <h1>header</h1>
-    <nav>
+    <nav id="navmenu">
       <ul>
-        <li><a href="#">&#128123; Accueil</a></li>
-        <li><a href="#">&#9964; lien</a></li>
-        <li><a href="#">&#9935; lien2</a></li>
-        <li><a href="#">&#9935; lien3</a></li>
+        <li ><a  href="#navmenu">&#128123; &#9762;</a></li>
+        <li ><a  href="#central">&#9964; &#9763;</a></li>
+        <li><a target="_blank" href="http://www.code-couleur.com/#pickerPanel">&#9935;&#9791;</a></li>
+        <li><a href="#">&#9935;</a></li>
       </ul>
     </nav>
-    <!-- <div>
-    <form name="search" target="_blank" action="http://google.fr" method="GET">
-    <label for="search"></label>
-    <input type="text" name="q" value="">
-    <button type="submit">search !</button>
-  </form>
-</div> -->
+
 </header >
 <!-- Fin header -->
 <!-- Début contenu central -->
 
 <section>
-  <img src="Chaton_le_plus_mignon.gif" alt=""/>
-  <p><a title="vers toto et au-delà !" href="toto.html" target="_blank"> Lorem ipsum </a> dolor sit amet, <b>consectetur adipiscing elit.</b> Curabitur molestie porta rhoncus. Nulla elit urna, vestibulum sed nulla non, laoreet blandit arcu. Etiam a laoreet diam. Nullam eleifend ullamcorper consectetur. Aliquam sollicitudin dui vel consectetur porttitor. Integer vel enim nisi. Donec eget lacinia enim, ac iaculis risus. Nulla eros justo, mattis eget lorem nec, lobortis placerat sem. Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> In eu mi ac nisi vehicula condimentum nec sed mauris. Nam vel nisi urna. Maecenas in ante orci. Ut vestibulum neque eget ultrices facilisis. In a porttitor sem, et tincidunt mauris. Vestibulum in massa tempus, commodo massa a, tempus enim.
-  </p>
+  <div class="images">
 
-  <p> <i> Nunc semper, nisi at blandit rhoncus,</i> mi tellus posuere eros, a blandit libero lacus laoreet lorem. Sed et placerat nisi. Vivamus laoreet feugiat accumsan. Suspendisse id risus eu nisi scelerisque sagittis vitae vitae mauris. Fusce sed augue tortor. Maecenas dictum tincidunt risus. Phasellus hendrerit volutpat dui ac malesuada. Nullam porta ligula id scelerisque mollis. In sit amet aliquam massa. Sed vel ex odio.
-  </p>
+  </div>
+  <ol>
+    <li><a href="#">yo</a></li>
+    <li><a href="#">hey</a></li>
+    <li><a href="#">toto</a></li>
+  </ol>
+  <article id='central'>
+    <div class="container">
+      <img src="Chaton_le_plus_mignon.gif" alt=""/>
+    </div>
+    <div class="container">
+      <img src="chaton.jpg" alt=""/>
+    </div>
+    <p><a title="vers toto et au-delà !" href="toto.html" target="_blank"> Lorem ipsum </a> dolor sit amet, <b>consectetur adipiscing elit.</b> Curabitur molestie porta rhoncus. Nulla elit urna, vestibulum sed nulla non, laoreet blandit arcu. Etiam a laoreet diam. Nullam eleifend ullamcorper consectetur. Aliquam sollicitudin dui vel consectetur porttitor. Integer vel enim nisi. Donec eget lacinia enim, ac iaculis risus. Nulla eros justo, mattis eget lorem nec, lobortis placerat sem. Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> In eu mi ac nisi vehicula condimentum nec sed mauris. Nam vel nisi urna. Maecenas in ante orci. Ut vestibulum neque eget ultrices facilisis. In a porttitor sem, et tincidunt mauris. Vestibulum in massa tempus, commodo massa a, tempus enim.
+    </p>
+
+    <p> <i> Nunc semper, nisi at blandit rhoncus,</i> mi tellus posuere eros, a blandit libero lacus laoreet lorem. Sed et placerat nisi. Vivamus laoreet feugiat accumsan. Suspendisse id risus eu nisi scelerisque sagittis vitae vitae mauris. Fusce sed augue tortor. Maecenas dictum tincidunt risus. Phasellus hendrerit volutpat dui ac malesuada. Nullam porta ligula id scelerisque mollis. In sit amet aliquam massa. Sed vel ex odio.
+    </p>
+  </article>
   <aside>
     <p>  <em>Nunc tincidunt tortor at dapibus ultricies.</em> Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus dignissim enim lectus, non ornare leo auctor quis. Duis faucibus dapibus vestibulum. Aliquam erat volutpat. Maecenas facilisis nibh vitae turpis tincidunt, id condimentum magna vestibulum. Maecenas id ligula eget arcu placerat mattis ut ac eros. Praesent sodales aliquam velit vitae vehicula. In elementum ante quis sem elementum, id posuere magna faucibus. Nullam ut nisi quis odio rhoncus suscipit. Donec volutpat neque eget diam auctor ornare. Nullam consequat erat convallis massa fringilla posuere. Suspendisse varius porttitor urna, id tempus quam vulputate eu. Maecenas mattis dui elit, ac imperdiet dui ornare eu.
+    Nunc semper, nisi at blandit rhoncus, mi tellus posuere eros, a blandit libero lacus laoreet lorem. Sed et placerat nisi. Vivamus laoreet feugiat accumsan. Suspendisse id risus eu nisi scelerisque sagittis vitae vitae mauris. Fusce sed augue tortor. Maecenas dictum tincidunt risus. Phasellus hendrerit volutpat dui ac malesuada. Nullam porta ligula id scelerisque mollis. In sit amet aliquam massa. Sed vel ex odio.
     </p>
+
   </aside>
 </section>
 
@@ -49,14 +68,52 @@
 <footer>
 
   <h3>footer</h3>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3306652.3916040035!2d1.8574220314300258!3d47.11116604395796!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1499862327706" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3306652.3916040035!2d1.8574220314300258!3d47.11116604395796!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1499862327706" width="100%" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
 </footer>
 <!-- fin footer -->
+</div>
 </body>
 
 <script type="text/javascript">
-// while(true) {
-//   console.log('toto');
-// }
+
+$(document).ready(function(){
+  // var variables = {}
+  // var variables.$obj = null;
+  $('img').click(function (){
+    $this = $(this);
+    $this.fadeOut('slow');
+    setTimeout(() => {
+      $(this).fadeIn('slow')
+    }, 5000);
+  })
+
+  $('p').click(function (){
+    var color =   $(this).css('color');
+    // console.log(color);
+    if (color == 'rgb(0, 0, 0)') {
+      $(this).css('color','blue')
+    } else {
+      $(this).css('color','black')
+    }
+  })
+})
+
+
+var myArray = [1,2,3,4,5,6,8,9,7];
+var newArray = myArray.slice();
+
+myArray[3] = 3;
+myArray.push('toto')
+console.log(myArray);
+
+console.log(newArray);
+
 </script>
+<!-- <div>
+<form name="search" target="_blank" action="http://google.fr" method="GET">
+<label for="search"></label>
+<input type="text" name="q" value="">
+<button type="submit">search !</button>
+</form>
+</div> -->
 </html>

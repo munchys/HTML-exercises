@@ -3,13 +3,31 @@
 Ma feuille de style à donf de ouf
 */
 
+
+
 body{
-  background-color: #A3CCFF;
+  width: 100%;
+  background-color: lightgrey;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #2b2a2a;
+  font-size: 1.2em;
+
+}
+
+#global{
+  width: 1000px;
+  background-color: #FFF;
+  margin: 30px auto;
+  /*padding: inherit;*/
+
 }
 header{
   border:1px solid #000;
 }
 header h1{
+  font-family: 'Pacifico', cursive;
   display:inline-block;
   border:1px solid #000;
   background-color:green;
@@ -17,15 +35,15 @@ header h1{
   height:100px;
   vertical-align: middle;
 }
-header nav{
+nav{
   display:inline-block;
   border:1px solid #000;
   vertical-align: middle;
-  background-color: brown;
+  background-color: #CDCDCDCD;
   padding: 0;
 }
 header nav ul{
-  background-color: yellow;
+  /*background-color: lightgrey;*/
   margin: 0;
   padding: 0;
 }
@@ -33,15 +51,75 @@ header nav ul li{
   width: 150px;
   display: inline-block;
   margin-bottom: : 2px;
-  background-color: orange;
+  /*background-color: orange;*/
 }
 header nav ul li a{
   vertical-align: center;
   text-align: center;
   width: inherit;
   display: inline-block;
+  text-decoration: none;
   line-height: 40px;
-  background-color: orange;
+  background-color: lightgrey;
+  transition: transform 0.5s
+}
+
+section{
+    border:1px solid #000;
+}
+
+section article {
+  vertical-align: middle;
+  width: 73%;
+}
+section aside {
+  vertical-align: top;
+  width: 22%;
+}
+
+section aside, article {
+  border:1px solid #000;
+  display: inline-block;
+  padding: 5px;
+  width: 22%;
+}
+img{
+    animation-name: example;
+    animation-duration: 4s;
+    transition: width 2s, height 2s, transform 2s, border 2s;
+}
+.container:hover img{
+  transform: rotateX(180deg);
+}
+
+#central p{
+  text-align: left;
+  word-spacing: 5px;
+  letter-spacing: -1px;
+  text-decoration: none;
+  line-height: 130%;
+  font-weight: 400;
+  text-transform:lowercase;
+}
+
+#navmenu li {
+  width: 150px;
+  display: inline-block;
+  margin-bottom: : 50px;
+  /*background-color: brown;*/
+}
+
+.fondbleu{
+  background-color: blue;
+}
+.container{
+  display: inline-block;
+
+}
+
+
+.container:hover img{
+  transform: rotateX(180deg);
 }
 
 button:hover{
@@ -49,22 +127,20 @@ button:hover{
   cursor: hand;
 }
 
-/*body section p{
-  display: inline-block;
-  width: 500px;
-
+li:hover a{
+  transform: rotate(45deg);
+  text-decoration: underline;
 }
-aside p{
-  display: inline-block;
-  width: 500px;
-}*/
-
 li{
   color:blue;
 }
-aside{
-  color:green;
+a:hover{
+    color:yellow;
+
 }
-/*li{
-  display:block;
-}*/
+
+/* The animation code */
+@keyframes example {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
