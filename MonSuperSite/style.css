@@ -31,7 +31,7 @@ header h1{
   text-align: center;
   display:inline-block;
   border:1px solid #000;
-  background-image: url('img/mon_logo.jpg');
+  background-image: url('img/logo.jpg');
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
@@ -43,8 +43,8 @@ header h1{
 
 }
 h1:hover{
-  text-indent:0;
-  background-position: -5000px top;
+  animation-name: logoanime;
+  animation-duration: 4s;
   color: #000;
 }
 nav{
@@ -101,7 +101,8 @@ img{
     transition: width 2s, height 2s, transform 2s, border 2s;
 }
 .container:hover img{
-  transform: rotateX(180deg);
+  transform: rotate3d(0.5, 1,-0.5, 90deg);
+  /*transform: rotateZ(90deg);*/
 }
 
 #central p{
@@ -129,11 +130,6 @@ img{
 
 }
 
-
-.container:hover img{
-  transform: rotateX(180deg);
-}
-
 button:hover{
   cursor: pointer;
   cursor: hand;
@@ -149,9 +145,15 @@ button:hover{
 li{
   color:blue;
 }
-a:hover{
-    color:pink;
+/*a:hover{
+    color:lightred;
 
+}*/
+
+@keyframes logoanime {
+    from {background-position:center; text-indent:-5000px; }
+    50% {background-position:-5000px top; text-indent:0;}
+    to {background-position:center; text-indent:-5000px; }
 }
 
 /* The animation code */
