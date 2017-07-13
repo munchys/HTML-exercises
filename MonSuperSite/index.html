@@ -34,9 +34,6 @@
 <!-- Début contenu central -->
 
 <section>
-  <div class="images">
-
-  </div>
   <ol>
     <li><a href="#">yo</a></li>
     <li><a href="#">hey</a></li>
@@ -44,10 +41,10 @@
   </ol>
   <article id='central'>
     <div class="container">
-      <img src="Chaton_le_plus_mignon.gif" alt=""/>
+      <img alt="un chaton qui tourne la tête vers vous" src="img/Chaton_le_plus_mignon.gif" />
     </div>
     <div class="container">
-      <img src="chaton.jpg" alt=""/>
+      <img alt="un chaton qui nettoie sa patte" src="img/chaton.jpg" />
     </div>
     <p><a title="vers toto et au-delà !" href="toto.html" target="_blank"> Lorem ipsum </a> dolor sit amet, <b>consectetur adipiscing elit.</b> Curabitur molestie porta rhoncus. Nulla elit urna, vestibulum sed nulla non, laoreet blandit arcu. Etiam a laoreet diam. Nullam eleifend ullamcorper consectetur. Aliquam sollicitudin dui vel consectetur porttitor. Integer vel enim nisi. Donec eget lacinia enim, ac iaculis risus. Nulla eros justo, mattis eget lorem nec, lobortis placerat sem. Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> In eu mi ac nisi vehicula condimentum nec sed mauris. Nam vel nisi urna. Maecenas in ante orci. Ut vestibulum neque eget ultrices facilisis. In a porttitor sem, et tincidunt mauris. Vestibulum in massa tempus, commodo massa a, tempus enim.
     </p>
@@ -77,19 +74,15 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
-  // var variables = {}
-  // var variables.$obj = null;
   $('img').click(function (){
-    $this = $(this);
-    $this.fadeOut('slow');
+    $(this).fadeOut('slow');
     setTimeout(() => {
-      $(this).fadeIn('slow')
+      $(this).fadeIn('slow');
     }, 5000);
   })
 
   $('p').click(function (){
     var color =   $(this).css('color');
-    // console.log(color);
     if (color == 'rgb(0, 0, 0)') {
       $(this).css('color','blue')
     } else {
@@ -98,13 +91,19 @@ $(document).ready(function(){
   })
 })
 
+function list(array) {
+  return Array.prototype.slice.call(array);
 
-var myArray = [1,2,3,4,5,6,8,9,7];
-var newArray = myArray.slice();
+}
 
-myArray[3] = 3;
-myArray.push('toto')
-console.log(myArray);
+var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+
+var newArray = Array.prototype.slice.call(fruits);
+
+fruits[3] = 3;
+
+fruits.push('toto')
+console.log(fruits);
 
 console.log(newArray);
 
